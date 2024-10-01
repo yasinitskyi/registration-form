@@ -8,6 +8,8 @@ import {
 	RegistrationReducer,
 	ActionType,
 } from "../../reducers/RegistrationReducer";
+import facebookIcon from '../../assets/facebook.png'
+import googleIcon from '../../assets/google.png'
 import Styles from "./index.module.css";
 import * as yup from "yup";
 import { RenderIf } from "../../hoc/RenderIf";
@@ -89,10 +91,10 @@ export function RegistrationPage() {
 				</Typography>
 			</div>
 			<div className={Styles.buttonCollection}>
-				<GenericButton icon="/google.png" onClick={() => {}} type="light">
+				<GenericButton icon={googleIcon} onClick={() => {}} type="light">
 					<Typography tag="p">Sign up with Google</Typography>
 				</GenericButton>
-				<GenericButton icon="/facebook.png" onClick={() => {}} type="light">
+				<GenericButton icon={facebookIcon} onClick={() => {}} type="light">
 					<Typography tag="p">Sign up with Facebook</Typography>
 				</GenericButton>
 			</div>

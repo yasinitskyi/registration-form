@@ -1,4 +1,6 @@
 import classNames from "classnames";
+import checkedIcon from '../../assets/checked.svg'
+import uncheckedIcon from '../../assets/unchecked.svg'
 import { Typography } from "../Typography";
 import Styles from "./index.module.css";
 
@@ -23,7 +25,7 @@ export function Checkbox({
 				checked={isChecked}
 				onChange={onChange}
 			/>
-			<img src={isChecked ? "/checked.svg" : "/unchecked.svg"} />
+			<img src={isChecked ? checkedIcon : uncheckedIcon} />
 			<Typography className={classNames(Styles.label, {[Styles.checked]: isChecked})} tag="p">
 				{label}
 			</Typography>

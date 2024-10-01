@@ -1,5 +1,6 @@
 import { Typography } from "../Typography";
 import classNames from "classnames";
+import errorIcon from '../../assets/error.svg'
 import Styles from "./index.module.css";
 
 export interface MessageBoardProps {
@@ -15,7 +16,7 @@ export function MessageBoard({
 }: MessageBoardProps) {
 	return (
 		<div className={classNames(Styles.board, Styles[type], className)}>
-			<img className={Styles.icon} src="/error.svg" alt={`${type} indicator`} />
+			<img className={Styles.icon} src={errorIcon} alt={`${type} indicator`} />
 			<Typography className={Styles.text} tag="h3">{text}</Typography>
 		</div>
 	);

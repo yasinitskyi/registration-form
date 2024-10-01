@@ -1,3 +1,5 @@
+import viewActionIcon from '../../assets/viewActive.svg'
+import viewInActionIcon from '../../assets/viewInactive.svg'
 import Styles from "./index.module.css";
 
 export interface VisibilityToggleProps {
@@ -10,7 +12,7 @@ export function VisibilityToggle({onClick, isVisibilityActive}: VisibilityToggle
 		<img
 			className={Styles.passwordVisibilityToggle}
 			onClick={onClick}
-			src={isVisibilityActive ? "/viewActive.svg" : "/viewInactive.svg"}
+			src={isVisibilityActive ? viewActionIcon : viewInActionIcon}
 			alt="Information visibility toggle"
 		/>
 	);
