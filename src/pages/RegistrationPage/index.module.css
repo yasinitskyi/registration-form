@@ -1,0 +1,125 @@
+.container {
+	width: 401px;
+	height: min-content;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+	margin: auto;
+}
+
+.titleContainer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 8px;
+}
+
+.heading {
+	width: 100%;
+	margin: 0;
+}
+
+.title {
+	text-align: left;
+}
+
+.subtitle {
+	text-align: left;
+}
+
+.form {
+	width: 100%;
+	gap: 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	height: min-content;
+	margin-top: 9px;
+	margin-bottom: 29px;
+}
+
+.buttonCollection {
+	display: flex;
+	width: 100%;
+	gap: 20px
+}
+
+.login {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+}
+
+.loginText {
+	color: #757575;
+}
+
+.navigationText {
+	color: #000000;
+	text-align: left;
+	width: max-content;
+	transform: translateX(-100%);
+}
+
+.navigation {
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+}
+
+.navigationWrapper {
+	width: max-content;
+}
+
+.formSeparation {
+	display: flex;
+	align-items: center;
+	gap: 9px;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.separator {
+	height: 1px;
+	background-color: #000000;
+	flex-basis: 45%;
+	margin: 0;
+}
+
+@media (max-width: 640px) {
+	.navigationText {
+		transform: translateX(0);
+	}
+}
+
+@media (max-width: 415px) {
+	.buttonCollection {
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	.formSeparation {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		justify-content: center;
+	}
+	
+	.separator {
+		display: none;
+	}
+
+	.container {
+		width: 100%;
+	}
+
+	.navigationText {
+		transform: translateX(0);
+	}
+}
+
