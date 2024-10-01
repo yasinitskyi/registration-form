@@ -1,0 +1,11 @@
+.text {
+	color: #3c71ff;
+	cursor: pointer;
+	font-weight: 700;
+}
+
+.text:hover {
+	text-decoration-line: underline;
+	text-underline-offset: 8px;
+	text-decoration-thickness: 2px;
+}
