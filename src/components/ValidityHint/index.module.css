@@ -1,0 +1,9 @@
+.hint {
+	display: flex;
+	gap: 4px;
+	color: #ababab;
+}
+
+.isValid {
+	color: #000000;
+}
